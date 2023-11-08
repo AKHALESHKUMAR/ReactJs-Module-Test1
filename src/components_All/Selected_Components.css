@@ -1,0 +1,144 @@
+/*  Container*/
+.Selected_Container{
+    width: 100%;
+    background-color: #F7ECDC;
+    font-weight: 500;
+    flex-direction: column;
+}
+
+/* uppper */
+.Selected_Container .Upper{
+    width: 100%;
+    height:10%;
+    display: flex;
+    align-items: center;
+    background-color: #E8E8E8;
+}
+.Selected_Container .Upper > img{
+    width: 1rem;
+    height: 0.5rem;
+    margin-left: 10px;
+}
+.Selected_Container .Upper{
+    display: flex;
+}
+.Selected_Container .Upper .group{
+    margin-top: 0px;
+}
+
+/* Middle Container */
+.Selected_Container .center{
+    width: 100%;
+    height: 65%;
+    background-color: #F7ECDC;
+}
+.Selected_Container .center{
+    width: 100%;
+    height: 65%;
+    background-color: #F7ECDC;
+    overflow: auto;
+    padding: 1rem;
+}
+.Selected_Container .center .note{
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+    align-items:baseline
+}
+.Selected_Container .center .note .notetiming p{
+    font-size: 13px;
+}
+.Selected_Container .center .note .notedetail{
+    margin-left: 2rem;
+    width: 60%;
+    font-size: 13px;
+    line-height: 160.188%;
+    letter-spacing: 0.63px;
+}
+
+/* bottom  */
+.Selected_Container .bottom{
+    width: 100%;
+    height: 25%;
+    background-color: #E8E8E8;
+    padding: 1rem 1rem;
+    position: relative;
+}
+.Selected_Container .bottom img{
+    position: absolute;
+    bottom: 30px;
+    right:40px;
+}
+.Selected_Container .bottom textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+    border: 1px solid #CCC;
+}
+.Selected_Container .bottom textarea::placeholder{
+    color: #9A9A9A;
+    font-size: 15px;
+    letter-spacing: 0.596px;
+}
+
+@media (min-width: 40em){
+    /* backdropContainer */
+    .backdrop{
+        display: flex !important;
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F7ECDC;
+    }
+    .backdrop h2{
+        font-size: 40px;
+        letter-spacing: 1px;
+        margin: 0px;
+    }
+    .backdrop div{
+        display: flex;
+        align-items: center;
+        width: 11.5rem;
+        margin-top: 10rem;
+        justify-content: space-between;
+    }
+    .backdrop div span{
+        color: #292929;
+        letter-spacing: 0.44px;
+    }
+    .backdrop p{
+        width: 30rem;
+    }
+    .Selected_Container{
+        width: 80%;
+        display: flex !important;
+    }
+    .Selected_Container .Upper > img{
+        display: none;
+    }
+    .Selected_Container .middle{
+        padding: 2rem;
+    }
+    .Selected_Container .middle .note .notetiming p{
+        font-size: 16px;
+    }    
+    .selectednote-cont .middle .note .notedetail{
+        width: 85%;
+        font-size: 16px;
+    }
+    .Selected_Container .bottom{
+        padding: 1rem 2rem;
+    } 
+    .Selected_Container .bottom textarea{
+        font-size: 25px;
+        padding: 1rem;
+    }
+    .Selected_Container .bottom textarea::placeholder{
+        font-size: 25px;
+    }
+}   

@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+
+}
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  font-family: Roboto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  @media (min-width:40em){
+    ::-webkit-scrollbar {
+      width: 1rem;
+    }  
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+.group{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+.group .groupicon{
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+.group .groupicon img{
+  position: absolute;
+}
+.group .groupicon h3{
+  font-size: 20px;
+  letter-spacing: 0.482px;
+  position: absolute;
+  color: #FFF;
+  font-weight: inherit;
+}
+.group .name{
+  letter-spacing: 0.413px;
+  font-size: 20.67px;
+}

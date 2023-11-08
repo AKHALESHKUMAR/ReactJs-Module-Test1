@@ -1,0 +1,58 @@
+/* Container */
+.Note_Category_Container{
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.Note_Category_Container .Title{
+    font-size: 31.52px;
+    letter-spacing: 0.63px;
+    margin-bottom: 1rem;
+}
+
+/* Btn */
+.Note_Category_Container button{
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    align-self: flex-start;
+    color: #FFF;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 0.54px;
+    border-radius: 50px;
+    background: #000;
+}
+
+/* Group Container */
+.Note_Category_Container .Group-Container{
+    overflow: auto;
+    height: 70vh;
+}
+
+/*  media query for responsive */
+
+@media (min-width: 40em){
+    .Note_Category_Container{
+        width: 20%;
+        padding-right: 0px;
+        display: flex !important;
+    }
+    .Note_Category_Container .Title{
+        margin-bottom: 2rem;
+    }
+    .Note_Category_Container .btn{
+        width: 260px;
+        height: 40px;
+        margin-left: 1rem;
+    }
+    .Note_Category_Container .Group-Container{
+        margin-top: 2rem;
+    }
+    .Note_Category_Container .Group-Container .group{
+        border-radius: 32px 0px 0px 32px;
+        cursor: pointer;
+    }
+}
